@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Dado
-build_property.ProjectDir = C:\Users\baron\source\repos\PROG3-UTN\Dados\ConsoleApp1\
+build_property.ProjectDir = C:\Users\baron\source\repos\UTN-PROG3\Dados\ConsoleApp1\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

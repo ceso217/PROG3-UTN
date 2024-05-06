@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "u+DztzG0aGgoEv4cOmW7nXEU4dQ2jPaJsb8uXqF9ptiWT7b6HmtmYS+BbCIt3qCAoLNJZibeZLr7szqzaEVl1g==",
+  "dgSpecHash": "IEqGSg0l8p5x4PcrxdSZMJD6NWvviRx0PCXuv6+DfSh18MIcbyDSkQkFhTE2HPSWyo71KyfEgDgtYWUBg7u2Sg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\baron\\source\\repos\\PROG3-UTN\\Dados\\ConsoleApp1\\Dado.csproj",
+  "projectFilePath": "C:\\Users\\baron\\source\\repos\\UTN-PROG3\\Dados\\ConsoleApp1\\Dado.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

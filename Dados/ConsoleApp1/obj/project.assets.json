@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\baron\\source\\repos\\PROG3-UTN\\Dados\\ConsoleApp1\\Dado.csproj",
+      "projectUniqueName": "C:\\Users\\baron\\source\\repos\\UTN-PROG3\\Dados\\ConsoleApp1\\Dado.csproj",
       "projectName": "Dado",
-      "projectPath": "C:\\Users\\baron\\source\\repos\\PROG3-UTN\\Dados\\ConsoleApp1\\Dado.csproj",
+      "projectPath": "C:\\Users\\baron\\source\\repos\\UTN-PROG3\\Dados\\ConsoleApp1\\Dado.csproj",
       "packagesPath": "C:\\Users\\baron\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\baron\\source\\repos\\PROG3-UTN\\Dados\\ConsoleApp1\\obj\\",
+      "outputPath": "C:\\Users\\baron\\source\\repos\\UTN-PROG3\\Dados\\ConsoleApp1\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -46,11 +46,6 @@
         "warnAsError": [
           "NU1605"
         ]
-      },
-      "restoreAuditProperties": {
-        "enableAudit": "true",
-        "auditLevel": "low",
-        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -72,7 +67,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
