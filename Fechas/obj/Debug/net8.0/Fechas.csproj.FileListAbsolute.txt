@@ -1,0 +1,15 @@
+C:\Users\baron\Desktop\copias\UTN-PROG3\Fechas\bin\Debug\net8.0\Fechas.exe
+C:\Users\baron\Desktop\copias\UTN-PROG3\Fechas\bin\Debug\net8.0\Fechas.deps.json
+C:\Users\baron\Desktop\copias\UTN-PROG3\Fechas\bin\Debug\net8.0\Fechas.runtimeconfig.json
+C:\Users\baron\Desktop\copias\UTN-PROG3\Fechas\bin\Debug\net8.0\Fechas.dll
+C:\Users\baron\Desktop\copias\UTN-PROG3\Fechas\bin\Debug\net8.0\Fechas.pdb
+C:\Users\baron\Desktop\copias\UTN-PROG3\Fechas\obj\Debug\net8.0\Fechas.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\baron\Desktop\copias\UTN-PROG3\Fechas\obj\Debug\net8.0\Fechas.AssemblyInfoInputs.cache
+C:\Users\baron\Desktop\copias\UTN-PROG3\Fechas\obj\Debug\net8.0\Fechas.AssemblyInfo.cs
+C:\Users\baron\Desktop\copias\UTN-PROG3\Fechas\obj\Debug\net8.0\Fechas.csproj.CoreCompileInputs.cache
+C:\Users\baron\Desktop\copias\UTN-PROG3\Fechas\obj\Debug\net8.0\Fechas.sourcelink.json
+C:\Users\baron\Desktop\copias\UTN-PROG3\Fechas\obj\Debug\net8.0\Fechas.dll
+C:\Users\baron\Desktop\copias\UTN-PROG3\Fechas\obj\Debug\net8.0\refint\Fechas.dll
+C:\Users\baron\Desktop\copias\UTN-PROG3\Fechas\obj\Debug\net8.0\Fechas.pdb
+C:\Users\baron\Desktop\copias\UTN-PROG3\Fechas\obj\Debug\net8.0\Fechas.genruntimeconfig.cache
+C:\Users\baron\Desktop\copias\UTN-PROG3\Fechas\obj\Debug\net8.0\ref\Fechas.dll
