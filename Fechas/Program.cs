@@ -19,9 +19,6 @@ class Program
 
 class Fechas
 {
-    DateTime fecha1 { get; set; }
-    DateTime fecha2 { get; set; }
-
     public void ObtenerDiasCalendario()
     {
         TimeSpan dias = TimeSpan.Zero;
@@ -38,8 +35,8 @@ class Fechas
             if(DateTime.TryParse(fecha, out DateTime fecha2))
             {
                 Console.WriteLine("Se cargó la segunda fecha correctamente");
-                dias = fecha1- fecha2;
-                Console.WriteLine(dias);
+                dias = fecha1 < fecha2 ? (fecha1 - fecha2) * -1 : fecha1 - fecha2;
+                Console.WriteLine($"Entre las dos fechas hay {dias.Days} días");
             }
             else
             {
