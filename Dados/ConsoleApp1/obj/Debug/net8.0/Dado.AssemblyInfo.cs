@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Dado")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+03b10ec577931efd94bc8658e1b52e86871402e7")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2b9cab82e961bbbd51a4373bd84852f1faff0196")]
 [assembly: System.Reflection.AssemblyProductAttribute("Dado")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Dado")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -12,7 +12,7 @@ class Program
         do
         {
             Console.WriteLine("Los modos de apuesta son:\n1. Conservador (-1/2)\n2. Arriesgado (-2/5)\n3. Desesperado (-4/15) ");
-            for (int i = 0; i < casino.Jugadores.Count; i++)
+            for (int i = 0; i < casino.Jugadores.Length; i++)
             {
                 Console.WriteLine("JUGADOR " + (i + 1) + ": ");
                 do
@@ -30,7 +30,7 @@ class Program
             }
             numeroWin = casino.lanzarDados();
             Console.WriteLine("El número sumado de los dados que salió es " + numeroWin + "!");
-            for (int i = 0; i < casino.Jugadores.Count; i++)
+            for (int i = 0; i < casino.Jugadores.Length; i++)
             {
                 if (numeroWin == casino.Jugadores[i].NumApuesta)
                 {
@@ -72,13 +72,13 @@ class Casino
 {
     public Random dado;
     public int Pozo { get; set; }
-    public List<Jugador> Jugadores { get; set; }
+    public Jugador [] Jugadores { get; set; }
 
     public Casino()
     {
         this.dado = new Random();
         this.Pozo = 10000;
-        this.Jugadores = new List<Jugador> { new Jugador(), new Jugador() };
+        this.Jugadores = new Jugador[] { new Jugador(), new Jugador() };
     }
     public int lanzarDados()
     {
