@@ -1,0 +1,15 @@
+C:\Users\baron\source\repos\UTN-PROG3\PeriodoDeTiempo\bin\Debug\net8.0\PeriodoDeTiempo.exe
+C:\Users\baron\source\repos\UTN-PROG3\PeriodoDeTiempo\bin\Debug\net8.0\PeriodoDeTiempo.deps.json
+C:\Users\baron\source\repos\UTN-PROG3\PeriodoDeTiempo\bin\Debug\net8.0\PeriodoDeTiempo.runtimeconfig.json
+C:\Users\baron\source\repos\UTN-PROG3\PeriodoDeTiempo\bin\Debug\net8.0\PeriodoDeTiempo.dll
+C:\Users\baron\source\repos\UTN-PROG3\PeriodoDeTiempo\bin\Debug\net8.0\PeriodoDeTiempo.pdb
+C:\Users\baron\source\repos\UTN-PROG3\PeriodoDeTiempo\obj\Debug\net8.0\PeriodoDeTiempo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\baron\source\repos\UTN-PROG3\PeriodoDeTiempo\obj\Debug\net8.0\PeriodoDeTiempo.AssemblyInfoInputs.cache
+C:\Users\baron\source\repos\UTN-PROG3\PeriodoDeTiempo\obj\Debug\net8.0\PeriodoDeTiempo.AssemblyInfo.cs
+C:\Users\baron\source\repos\UTN-PROG3\PeriodoDeTiempo\obj\Debug\net8.0\PeriodoDeTiempo.csproj.CoreCompileInputs.cache
+C:\Users\baron\source\repos\UTN-PROG3\PeriodoDeTiempo\obj\Debug\net8.0\PeriodoDeTiempo.sourcelink.json
+C:\Users\baron\source\repos\UTN-PROG3\PeriodoDeTiempo\obj\Debug\net8.0\PeriodoDeTiempo.dll
+C:\Users\baron\source\repos\UTN-PROG3\PeriodoDeTiempo\obj\Debug\net8.0\refint\PeriodoDeTiempo.dll
+C:\Users\baron\source\repos\UTN-PROG3\PeriodoDeTiempo\obj\Debug\net8.0\PeriodoDeTiempo.pdb
+C:\Users\baron\source\repos\UTN-PROG3\PeriodoDeTiempo\obj\Debug\net8.0\PeriodoDeTiempo.genruntimeconfig.cache
+C:\Users\baron\source\repos\UTN-PROG3\PeriodoDeTiempo\obj\Debug\net8.0\ref\PeriodoDeTiempo.dll
