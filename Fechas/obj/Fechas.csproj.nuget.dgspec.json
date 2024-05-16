@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\baron\\Desktop\\copias\\UTN-PROG3\\Fechas\\Fechas.csproj": {}
+    "C:\\Users\\baron\\source\\repos\\UTN-PROG3\\Fechas\\Fechas.csproj": {}
   },
   "projects": {
-    "C:\\Users\\baron\\Desktop\\copias\\UTN-PROG3\\Fechas\\Fechas.csproj": {
+    "C:\\Users\\baron\\source\\repos\\UTN-PROG3\\Fechas\\Fechas.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\baron\\Desktop\\copias\\UTN-PROG3\\Fechas\\Fechas.csproj",
+        "projectUniqueName": "C:\\Users\\baron\\source\\repos\\UTN-PROG3\\Fechas\\Fechas.csproj",
         "projectName": "Fechas",
-        "projectPath": "C:\\Users\\baron\\Desktop\\copias\\UTN-PROG3\\Fechas\\Fechas.csproj",
+        "projectPath": "C:\\Users\\baron\\source\\repos\\UTN-PROG3\\Fechas\\Fechas.csproj",
         "packagesPath": "C:\\Users\\baron\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\baron\\Desktop\\copias\\UTN-PROG3\\Fechas\\obj\\",
+        "outputPath": "C:\\Users\\baron\\source\\repos\\UTN-PROG3\\Fechas\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -39,11 +39,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -65,7 +60,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
