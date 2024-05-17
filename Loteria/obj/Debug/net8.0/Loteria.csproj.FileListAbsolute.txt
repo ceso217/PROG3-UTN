@@ -1,0 +1,15 @@
+C:\Users\baron\source\repos\UTN-PROG3\Loteria\bin\Debug\net8.0\Loteria.exe
+C:\Users\baron\source\repos\UTN-PROG3\Loteria\bin\Debug\net8.0\Loteria.deps.json
+C:\Users\baron\source\repos\UTN-PROG3\Loteria\bin\Debug\net8.0\Loteria.runtimeconfig.json
+C:\Users\baron\source\repos\UTN-PROG3\Loteria\bin\Debug\net8.0\Loteria.dll
+C:\Users\baron\source\repos\UTN-PROG3\Loteria\bin\Debug\net8.0\Loteria.pdb
+C:\Users\baron\source\repos\UTN-PROG3\Loteria\obj\Debug\net8.0\Loteria.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\baron\source\repos\UTN-PROG3\Loteria\obj\Debug\net8.0\Loteria.AssemblyInfoInputs.cache
+C:\Users\baron\source\repos\UTN-PROG3\Loteria\obj\Debug\net8.0\Loteria.AssemblyInfo.cs
+C:\Users\baron\source\repos\UTN-PROG3\Loteria\obj\Debug\net8.0\Loteria.csproj.CoreCompileInputs.cache
+C:\Users\baron\source\repos\UTN-PROG3\Loteria\obj\Debug\net8.0\Loteria.sourcelink.json
+C:\Users\baron\source\repos\UTN-PROG3\Loteria\obj\Debug\net8.0\Loteria.dll
+C:\Users\baron\source\repos\UTN-PROG3\Loteria\obj\Debug\net8.0\refint\Loteria.dll
+C:\Users\baron\source\repos\UTN-PROG3\Loteria\obj\Debug\net8.0\Loteria.pdb
+C:\Users\baron\source\repos\UTN-PROG3\Loteria\obj\Debug\net8.0\Loteria.genruntimeconfig.cache
+C:\Users\baron\source\repos\UTN-PROG3\Loteria\obj\Debug\net8.0\ref\Loteria.dll

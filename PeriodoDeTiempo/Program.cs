@@ -8,6 +8,7 @@ class Program
 
         lineaDeTiempo.mostrar();
         lineaDeTiempo.union();
+        lineaDeTiempo.ordenadarPeriodo();
         lineaDeTiempo.mostrar();
     }
 }
@@ -15,6 +16,7 @@ class Program
 class LineaDeTiempo
 {
     private Periodo[] periodos { get; set; }
+    private Periodo[] periodosOrdenado { get; set; }
 
     public LineaDeTiempo()
     {
@@ -22,8 +24,11 @@ class LineaDeTiempo
             new Periodo(DateTime.Parse("04/05/2024 14:30:00"), DateTime.Parse("17/05/2024 17:25:00"), "A") ,
             new Periodo(DateTime.Parse("12/05/2024 11:15:00"), DateTime.Parse("25/05/2024 7:10:00"), "B") ,
             new Periodo(DateTime.Parse("08/05/2024 21:50:00"), DateTime.Parse("10/05/2024 3:00:00"),"C") ,
-            new Periodo(DateTime.Parse("27/05/2024 23:35:00"), DateTime.Parse("30/05/2024 20:55:00"),"D")
+            new Periodo(DateTime.Parse("27/05/2024 23:35:00"), DateTime.Parse("30/05/2024 20:55:00"),"D") ,
+            new Periodo(DateTime.Parse("13/04/2024 23:35:00"), DateTime.Parse("17/04/2024 20:55:00") ,"E")
         };
+
+        this.periodosOrdenado = new Periodo[periodos.Length];
     }
 
     // lo hice para agregar en el main los periodos pero al final decidi agregar los objetos en el constructor por defecto para ahorrar tiempo
@@ -92,6 +97,29 @@ class LineaDeTiempo
             }
         } while (huboUnion);
         Console.WriteLine("\n");
+    }
+
+    public void ordenadarPeriodo()
+    {
+        int indice = 0;
+        Periodo[] copia = new Periodo[periodos.Length];
+        periodos.CopyTo(copia,0);
+        DateTime periodoMin;
+        for (int i = 0; i < periodos.Length; i++)
+        {
+            periodoMin = DateTime.Parse("31/12/9999");
+            foreach (Periodo p in copia)
+            {
+                if (p is not null && periodoMin > p.FechaInicio)
+                {
+                    periodoMin = p.FechaInicio;
+                    indice = Array.IndexOf(copia,p);
+                }
+            }
+            periodosOrdenado[i] = copia[indice];
+            copia[indice] = null;
+        }
+        periodos = periodosOrdenado;
     }
 
     public void mostrar()
