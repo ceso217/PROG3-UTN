@@ -55,19 +55,25 @@ namespace Simon
                 buttonOn();
             }
         }
-        public void Enlighten(Button b, Color off, Color on, ref bool apagado)
+
+        public void Prenderse()
         {
-            if (apagado)
-            {
-                b.BackColor = on;
-                apagado = false;
-            }
-            else
-            {
-                b.BackColor = off;
-                apagado = true;
-            }
+
         }
+
+        //public void Enlighten(Button b, Color off, Color on, ref bool apagado)
+        //{
+        //    if (apagado)
+        //    {
+        //        b.BackColor = on;
+        //        apagado = false;
+        //    }
+        //    else
+        //    {
+        //        b.BackColor = off;
+        //        apagado = true;
+        //    }
+        //}
 
         public void buttonOff()
         {
@@ -254,6 +260,48 @@ namespace Simon
             }
 
             return resultado;
+        }
+    }
+
+    class BotonColor
+    {
+        public Color ColorPrendido { get; set; }
+        public Color ColorApagado { get; set; }
+    }
+
+    class BotonRojo : BotonColor
+    {
+        public BotonRojo()
+        {
+            ColorPrendido = Color.Red;
+            ColorApagado = Color.Maroon;
+        }
+    }
+
+    class BotonVerde : BotonColor
+    {
+        public BotonVerde()
+        {
+            ColorPrendido = Color.Lime;
+            ColorApagado = Color.DarkOliveGreen;
+        }
+    }
+
+    class BotonAzul : BotonColor
+    {
+        public BotonAzul()
+        {
+            ColorPrendido = Color.Blue;
+            ColorApagado = Color.MidnightBlue;
+        }
+    }
+
+    class BotonAmarillo : BotonColor
+    {
+        public BotonAmarillo()
+        {
+            ColorPrendido = Color.Yellow;
+            ColorApagado = Color.Goldenrod;
         }
     }
 }
