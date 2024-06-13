@@ -35,14 +35,15 @@
             this.buttonBlue = new System.Windows.Forms.Button();
             this.buttonYellow = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.timerSecuencia = new System.Windows.Forms.Timer(this.components);
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.timerJuego = new System.Windows.Forms.Timer(this.components);
-            this.labelTimer = new System.Windows.Forms.Label();
-            this.labelSecuencia = new System.Windows.Forms.Label();
-            this.labelSecuenciaJugador = new System.Windows.Forms.Label();
+            this.labelPuntaje = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.textBox2 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // buttonGreen
@@ -50,7 +51,7 @@
             this.buttonGreen.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.buttonGreen.AutoSize = true;
             this.buttonGreen.BackColor = System.Drawing.Color.DarkOliveGreen;
-            this.buttonGreen.Location = new System.Drawing.Point(93, 202);
+            this.buttonGreen.Location = new System.Drawing.Point(15, 206);
             this.buttonGreen.Name = "buttonGreen";
             this.buttonGreen.Size = new System.Drawing.Size(256, 144);
             this.buttonGreen.TabIndex = 0;
@@ -62,7 +63,7 @@
             this.buttonRed.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.buttonRed.AutoSize = true;
             this.buttonRed.BackColor = System.Drawing.Color.Maroon;
-            this.buttonRed.Location = new System.Drawing.Point(349, 52);
+            this.buttonRed.Location = new System.Drawing.Point(271, 56);
             this.buttonRed.Name = "buttonRed";
             this.buttonRed.Size = new System.Drawing.Size(260, 144);
             this.buttonRed.TabIndex = 1;
@@ -74,7 +75,7 @@
             this.buttonBlue.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.buttonBlue.AutoSize = true;
             this.buttonBlue.BackColor = System.Drawing.Color.MidnightBlue;
-            this.buttonBlue.Location = new System.Drawing.Point(609, 202);
+            this.buttonBlue.Location = new System.Drawing.Point(531, 206);
             this.buttonBlue.Name = "buttonBlue";
             this.buttonBlue.Size = new System.Drawing.Size(260, 144);
             this.buttonBlue.TabIndex = 2;
@@ -87,7 +88,7 @@
             this.buttonYellow.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.buttonYellow.AutoSize = true;
             this.buttonYellow.BackColor = System.Drawing.Color.Goldenrod;
-            this.buttonYellow.Location = new System.Drawing.Point(349, 352);
+            this.buttonYellow.Location = new System.Drawing.Point(271, 356);
             this.buttonYellow.Name = "buttonYellow";
             this.buttonYellow.Size = new System.Drawing.Size(260, 144);
             this.buttonYellow.TabIndex = 3;
@@ -98,82 +99,97 @@
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(454, 268);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(331, 265);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(42, 13);
+            this.label1.Size = new System.Drawing.Size(130, 39);
             this.label1.TabIndex = 4;
             this.label1.Text = "SIMON";
             // 
-            // timer1
+            // timerSecuencia
             // 
-            this.timer1.Interval = 1000;
-            this.timer1.Tick += new System.EventHandler(this.sequencEvent);
+            this.timerSecuencia.Interval = 700;
             // 
             // label2
             // 
-            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(145, 81);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(677, 32);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(13, 13);
+            this.label2.Size = new System.Drawing.Size(140, 18);
             this.label2.TabIndex = 5;
-            this.label2.Text = "0";
+            this.label2.Text = "Ingresa tu nickname";
             // 
             // label3
             // 
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(192, 148);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(38, 56);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(27, 13);
+            this.label3.Size = new System.Drawing.Size(0, 16);
             this.label3.TabIndex = 6;
-            this.label3.Text = "bool";
             // 
             // timerJuego
             // 
             this.timerJuego.Enabled = true;
-            this.timerJuego.Interval = 1000;
+            this.timerJuego.Interval = 1500;
             this.timerJuego.Tick += new System.EventHandler(this.timerJuego_Tick);
             // 
-            // labelTimer
+            // labelPuntaje
             // 
-            this.labelTimer.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.labelTimer.AutoSize = true;
-            this.labelTimer.Location = new System.Drawing.Point(483, 294);
-            this.labelTimer.Name = "labelTimer";
-            this.labelTimer.Size = new System.Drawing.Size(13, 13);
-            this.labelTimer.TabIndex = 7;
-            this.labelTimer.Text = "0";
-            // 
-            // labelSecuencia
-            // 
-            this.labelSecuencia.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.labelSecuencia.AutoSize = true;
-            this.labelSecuencia.Location = new System.Drawing.Point(639, 23);
-            this.labelSecuencia.Name = "labelSecuencia";
-            this.labelSecuencia.Size = new System.Drawing.Size(95, 13);
-            this.labelSecuencia.TabIndex = 8;
-            this.labelSecuencia.Text = "Secuencia colores";
-            // 
-            // labelSecuenciaJugador
-            // 
-            this.labelSecuenciaJugador.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.labelSecuenciaJugador.AutoSize = true;
-            this.labelSecuenciaJugador.Location = new System.Drawing.Point(799, 23);
-            this.labelSecuenciaJugador.Name = "labelSecuenciaJugador";
-            this.labelSecuenciaJugador.Size = new System.Drawing.Size(96, 13);
-            this.labelSecuenciaJugador.TabIndex = 9;
-            this.labelSecuenciaJugador.Text = "Secuencia jugador";
+            this.labelPuntaje.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.labelPuntaje.AutoSize = true;
+            this.labelPuntaje.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPuntaje.Location = new System.Drawing.Point(616, 117);
+            this.labelPuntaje.Name = "labelPuntaje";
+            this.labelPuntaje.Size = new System.Drawing.Size(80, 20);
+            this.labelPuntaje.TabIndex = 7;
+            this.labelPuntaje.Text = "Puntaje: 0";
             // 
             // label4
             // 
-            this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(760, 9);
+            this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(819, 98);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(13, 13);
+            this.label4.Size = new System.Drawing.Size(123, 18);
             this.label4.TabIndex = 10;
-            this.label4.Text = "0";
+            this.label4.Text = "Tabla de puntajes";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox1.Location = new System.Drawing.Point(823, 32);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(119, 20);
+            this.textBox1.TabIndex = 11;
+            // 
+            // button1
+            // 
+            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button1.AutoSize = true;
+            this.button1.Enabled = false;
+            this.button1.Location = new System.Drawing.Point(823, 58);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(119, 23);
+            this.button1.TabIndex = 12;
+            this.button1.Text = "Guardar Puntaje";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // textBox2
+            // 
+            this.textBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox2.Location = new System.Drawing.Point(814, 119);
+            this.textBox2.Multiline = true;
+            this.textBox2.Name = "textBox2";
+            this.textBox2.ReadOnly = true;
+            this.textBox2.Size = new System.Drawing.Size(137, 416);
+            this.textBox2.TabIndex = 13;
             // 
             // Form1
             // 
@@ -182,9 +198,10 @@
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(963, 547);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.labelSecuenciaJugador);
-            this.Controls.Add(this.labelSecuencia);
-            this.Controls.Add(this.labelTimer);
+            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.labelPuntaje);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -207,14 +224,15 @@
         private System.Windows.Forms.Button buttonBlue;
         private System.Windows.Forms.Button buttonYellow;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Timer timerSecuencia;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Timer timerJuego;
-        private System.Windows.Forms.Label labelTimer;
-        private System.Windows.Forms.Label labelSecuencia;
-        private System.Windows.Forms.Label labelSecuenciaJugador;
+        private System.Windows.Forms.Label labelPuntaje;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox textBox2;
     }
 }
 

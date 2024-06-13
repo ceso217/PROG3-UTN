@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -13,7 +14,10 @@ namespace Simon
     public enum Colores { green = 1, red = 2, blue = 3, yellow = 4 }
     public partial class Form1 : Form
     {
+        enum Estados { creandoSecuencia, mostrandoSecuencia, jugando, comparando, finDelJuego }
+        Estados estadoActual = Estados.creandoSecuencia;
         int seg = 0;
+        int puntaje = 0;
 
         public Form1()
         {
@@ -23,7 +27,6 @@ namespace Simon
         // eventos para iluminar botones
         int contador1 = 0;
         int contador2 = -1;
-        bool apagado = true;
         private void blueEvent(object sender, EventArgs e)
         {
             HandleEvent(buttonBlue, Color.MidnightBlue, Color.Blue, blueEvent);
@@ -43,37 +46,28 @@ namespace Simon
         private void HandleEvent(Button button, Color offColor, Color onColor, EventHandler eventHandler)
         {
             contador1++;
-            Enlighten(button, offColor, onColor, ref apagado);
-            label2.Text = contador1.ToString();
-            label3.Text = apagado.ToString();
+            Enlighten(button, offColor, onColor);
             if (contador1 == 2)
             {
                 contador1 = 0;
                 timerJuego.Tick -= eventHandler;
-                timer1.Tick -= eventHandler;
-                timer1.Stop();
+                timerSecuencia.Tick -= eventHandler;
+                timerSecuencia.Stop();
                 buttonOn();
             }
         }
 
-        public void Prenderse()
+        public void Enlighten(Button b, Color off, Color on)
         {
-
+            if (b.BackColor == off)
+            {
+                b.BackColor = on;
+            }
+            else
+            {
+                b.BackColor = off;
+            }
         }
-
-        //public void Enlighten(Button b, Color off, Color on, ref bool apagado)
-        //{
-        //    if (apagado)
-        //    {
-        //        b.BackColor = on;
-        //        apagado = false;
-        //    }
-        //    else
-        //    {
-        //        b.BackColor = off;
-        //        apagado = true;
-        //    }
-        //}
 
         public void buttonOff()
         {
@@ -91,76 +85,37 @@ namespace Simon
             buttonYellow.Enabled = true;
         }
 
-        public void sequencEvent(object sender, EventArgs e)
-        {
-            contador2++;
-            if (apagado)
-            {
-                if (contador2 < secuencia.Count)
-                {
-                    switch (secuencia[contador2])
-                    {
-                        case Colores.green:
-                            timer1.Start();
-                            timer1.Tick += greenEvent;
-                            break;
-                        case Colores.red:
-                            timer1.Start();
-                            timer1.Tick += redEvent;
-                            break;
-                        case Colores.blue:
-                            timer1.Start();
-                            timer1.Tick += blueEvent;
-                            break;
-                        case Colores.yellow:
-                            timer1.Start();
-                            timer1.Tick += yellowEvent;
-                            break;
-                    }
-                    label4.Text = contador2.ToString();
-                }
-                if(contador2==secuencia.Count+1)
-                {
-                    buttonOn();
-                    //timer1.Stop();
-                    contador2 = -1;
-                    timerJuego.Enabled = true;
-                }
-            }
-        }
-
         // eventos de botones
 
-        bool buttonPres = true;
         private void buttonGreen_Click(object sender, EventArgs e)
         {
             buttonOff();
-            buttonPres = true;
-            timerJuego.Tick += greenEvent;
+            timerSecuencia.Tick += greenEvent;
+            timerSecuencia.Start();
             agregarInt(Colores.green);
         }
 
         private void buttonRed_Click(object sender, EventArgs e)
         {
             buttonOff();
-            buttonPres = true;
-            timerJuego.Tick += redEvent;
+            timerSecuencia.Tick += redEvent;
+            timerSecuencia.Start();
             agregarInt(Colores.red);
         }
 
         private void buttonBlue_Click(object sender, EventArgs e)
         {
             buttonOff();
-            buttonPres = true;
-            timerJuego.Tick += blueEvent;
+            timerSecuencia.Tick += blueEvent;
+            timerSecuencia.Start();
             agregarInt(Colores.blue);
         }
 
         private void buttonYellow_Click(object sender, EventArgs e)
         {
             buttonOff();
-            buttonPres = true;
-            timerJuego.Tick += yellowEvent;
+            timerSecuencia.Tick += yellowEvent;
+            timerSecuencia.Start();
             agregarInt(Colores.yellow);
         }
 
@@ -168,31 +123,71 @@ namespace Simon
         private void timerJuego_Tick(object sender, EventArgs e)
         {
             seg++;
-            labelTimer.Text = seg.ToString();
-            labelSecuencia.Text = mostrarSecuencia();
-            labelSecuenciaJugador.Text = mostrarSecuenciaJugador();
-            comparar();
-            if (buttonPres)
+            labelPuntaje.Text = $"Puntaje: {puntaje.ToString()}";
+            if (estadoActual == Estados.creandoSecuencia)
             {
-                if (secuencia.Count != secuenciaJugador.Count)
+                textBox2.Text = cargarPuntaje();
+                label3.Text = "Creando la secuencia!";
+                crearSec();
+                estadoActual = Estados.mostrandoSecuencia;
+                seg = -1;
+            }
+            else if (estadoActual == Estados.mostrandoSecuencia)
+            {
+                mostrarSecuenciaGrafica();
+                label3.Text = "Mostrando secuencia!";
+                if (seg > secuencia.Count)
                 {
-                    if (acerto)
-                    {
-                        label1.Text = "Ingrese la secuencia";
-                    }
+                    timerSecuencia.Stop();
+                    estadoActual = Estados.jugando;
+                    timerSecuencia.Tick -= eventoSecuencia;
+                    buttonOn();
                 }
-                else
+            }
+            else if (estadoActual == Estados.jugando)
+            {
+                label3.Text = "Es tu turno de jugar!";
+                if (secuencia.Count == secuenciaJugador.Count)
                 {
-                    if (acerto)
-                    {
-                        crearSec();
-                        labelSecuencia.Text = mostrarSecuencia();
-                        mostrarSecuenciaGrafica();
-                        acerto = false;
-                        buttonPres = false;
-                        secuenciaJugador.Clear();
-                        label1.Text = "SIMON";
-                    }
+                    estadoActual = Estados.comparando;
+                }
+            }
+            else if (estadoActual == Estados.comparando)
+            {
+                label3.Text = "Comprobando el resultado :D";
+                estadoActual = Estados.creandoSecuencia;
+                comparar();
+            }
+            else if(estadoActual == Estados.finDelJuego)
+            {
+                textBox2.Text = cargarPuntaje();
+                label3.Text = "Fin del juego! Gracias por jugar <3";
+            }
+        }
+
+        int contador3 = -1;
+
+        private void eventoSecuencia(object sender, EventArgs e)
+        {
+            contador2++;
+            //label4.Text = contador2.ToString();
+
+            if (seg < secuencia.Count && contador2 % 2 == 0)
+            {
+                switch (secuencia[seg])
+                {
+                    case Colores.green:
+                        timerSecuencia.Tick += greenEvent;
+                        break;
+                    case Colores.red:
+                        timerSecuencia.Tick += redEvent;
+                        break;
+                    case Colores.blue:
+                        timerSecuencia.Tick += blueEvent;
+                        break;
+                    case Colores.yellow:
+                        timerSecuencia.Tick += yellowEvent;
+                        break;
                 }
             }
         }
@@ -200,22 +195,21 @@ namespace Simon
         // métodos para las funciones y mecánicas del juego
         List<Colores> secuencia = new List<Colores> { };
         List<Colores> secuenciaJugador = new List<Colores> { };
-        bool acerto = true;
 
         public void mostrarSecuenciaGrafica()
         {
             buttonOff();
-            timerJuego.Enabled = false;
-            timer1.Start();
+            if (seg == 0)
+            {
+                timerSecuencia.Tick += eventoSecuencia;
+            }
+            timerSecuencia.Start();
         }
         public void crearSec()
         {
             Random color = new Random();
-            if (acerto)
-            {
-                Colores color1 = (Colores)color.Next(1, 5);
-                secuencia.Add(color1);
-            }
+            Colores color1 = (Colores)color.Next(1, 5);
+            secuencia.Add(color1);
         }
         public void agregarInt(Colores c)
         {
@@ -228,12 +222,14 @@ namespace Simon
             {
                 if (mostrarSecuencia() == mostrarSecuenciaJugador())
                 {
-                    acerto = true;
+                    secuenciaJugador.Clear();
+                    puntaje++;
                 }
                 else
                 {
                     label1.Text = "Perdiste :(";
-                    timerJuego.Stop();
+                    estadoActual = Estados.finDelJuego;
+                    button1.Enabled = true;
                 }
             }
         }
@@ -261,47 +257,38 @@ namespace Simon
 
             return resultado;
         }
-    }
 
-    class BotonColor
-    {
-        public Color ColorPrendido { get; set; }
-        public Color ColorApagado { get; set; }
-    }
-
-    class BotonRojo : BotonColor
-    {
-        public BotonRojo()
+        FileInfo score = new FileInfo(@"C:\Users\baron\source\repos\UTN-PROG3\Simon\datos.txt");
+        private void button1_Click(object sender, EventArgs e)
         {
-            ColorPrendido = Color.Red;
-            ColorApagado = Color.Maroon;
+            button1.Enabled = false;
+            textBox1.Enabled = false;
+            using (FileStream fsw = score.Open(FileMode.Append, FileAccess.Write))
+            {
+                using (StreamWriter sw = new StreamWriter(fsw))
+                {
+                    sw.WriteLine($"{textBox1.Text} Puntaje: {puntaje} \r\n ");
+                }
+            }
+            puntaje = 0;
+            textBox1.Text = string.Empty;
         }
-    }
-
-    class BotonVerde : BotonColor
-    {
-        public BotonVerde()
+        
+        public string cargarPuntaje()
         {
-            ColorPrendido = Color.Lime;
-            ColorApagado = Color.DarkOliveGreen;
-        }
-    }
-
-    class BotonAzul : BotonColor
-    {
-        public BotonAzul()
-        {
-            ColorPrendido = Color.Blue;
-            ColorApagado = Color.MidnightBlue;
-        }
-    }
-
-    class BotonAmarillo : BotonColor
-    {
-        public BotonAmarillo()
-        {
-            ColorPrendido = Color.Yellow;
-            ColorApagado = Color.Goldenrod;
+            string linea = null;
+            string datos = "";
+            using (FileStream fsr = score.Open(FileMode.OpenOrCreate, FileAccess.ReadWrite))
+            {
+                using (StreamReader reader = new StreamReader(fsr))
+                {
+                    while ((linea = reader.ReadLine()) != null)
+                    {
+                        datos += linea + "\r\n";
+                    }
+                    return datos;
+                }
+            }
         }
     }
 }
