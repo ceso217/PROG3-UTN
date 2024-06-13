@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Text.Json;
 
 namespace Simon
 {
@@ -126,7 +127,8 @@ namespace Simon
             labelPuntaje.Text = $"Puntaje: {puntaje.ToString()}";
             if (estadoActual == Estados.creandoSecuencia)
             {
-                textBox2.Text = cargarPuntaje();
+                cargarPuntaje();
+                //textBox2.Text = cargarPuntaje();
                 label3.Text = "Creando la secuencia!";
                 crearSec();
                 estadoActual = Estados.mostrandoSecuencia;
@@ -158,9 +160,10 @@ namespace Simon
                 estadoActual = Estados.creandoSecuencia;
                 comparar();
             }
-            else if(estadoActual == Estados.finDelJuego)
+            else if (estadoActual == Estados.finDelJuego)
             {
-                textBox2.Text = cargarPuntaje();
+                cargarPuntaje();
+                //textBox2.Text = cargarPuntaje();
                 label3.Text = "Fin del juego! Gracias por jugar <3";
             }
         }
@@ -259,35 +262,68 @@ namespace Simon
         }
 
         FileInfo score = new FileInfo(@"C:\Users\baron\source\repos\UTN-PROG3\Simon\datos.txt");
+        List<Jugador> jugadores = new List<Jugador>();
         private void button1_Click(object sender, EventArgs e)
         {
             button1.Enabled = false;
             textBox1.Enabled = false;
-            using (FileStream fsw = score.Open(FileMode.Append, FileAccess.Write))
-            {
-                using (StreamWriter sw = new StreamWriter(fsw))
-                {
-                    sw.WriteLine($"{textBox1.Text} Puntaje: {puntaje} \r\n ");
-                }
-            }
+
+            // persistencia de archivo con .json
+            jugadores.Add(new Jugador(textBox1.Text, puntaje));
+
+            var options = new JsonSerializerOptions { WriteIndented = true };
+            string jsonString = JsonSerializer.Serialize(jugadores, options);
+            File.WriteAllText("jugadores.json", jsonString);
+
+            // persistencia de archivos con .txt
+            //using (FileStream fsw = score.Open(FileMode.Append, FileAccess.Write))
+            //{
+            //    using (StreamWriter sw = new StreamWriter(fsw))
+            //    {
+            //        sw.WriteLine($"{textBox1.Text} Puntaje: {puntaje} \r\n ");
+            //    }
+            //}
             puntaje = 0;
             textBox1.Text = string.Empty;
         }
-        
-        public string cargarPuntaje()
+
+        public void cargarPuntaje()
         {
-            string linea = null;
-            string datos = "";
-            using (FileStream fsr = score.Open(FileMode.OpenOrCreate, FileAccess.ReadWrite))
+            // persistencia de archivo con .json
+            string jsonString = File.ReadAllText("jugadores.json");
+            //var lista = JsonSerializer.Deserialize<List<Jugador>>(jsonString);
+            jugadores = JsonSerializer.Deserialize<List<Jugador>>(jsonString);
+            textBox2.Text = string.Empty;
+            foreach (var jugador in jugadores)
             {
-                using (StreamReader reader = new StreamReader(fsr))
-                {
-                    while ((linea = reader.ReadLine()) != null)
-                    {
-                        datos += linea + "\r\n";
-                    }
-                    return datos;
-                }
+                textBox2.Text += $"{jugador.Nombre} Puntaje: {jugador.Puntaje} \r\n";
+            }
+
+            // persistencia de archivos con .txt
+            //string linea = null;
+            //string datos = "";
+            //using (FileStream fsr = score.Open(FileMode.OpenOrCreate, FileAccess.ReadWrite))
+            //{
+            //    using (StreamReader reader = new StreamReader(fsr))
+            //    {
+            //        while ((linea = reader.ReadLine()) != null)
+            //        {
+            //            datos += linea + "\r\n";
+            //        }
+            //        return datos;
+            //    }
+            //}
+        }
+
+        class Jugador
+        {
+            public string Nombre { get; set; }
+            public int Puntaje { get; set; }
+
+            public Jugador(string Nombre, int Puntaje)
+            {
+                this.Nombre = Nombre;
+                this.Puntaje = Puntaje;
             }
         }
     }
