@@ -1,0 +1,22 @@
+[
+  "abuela",
+  "caramelo",
+  "pelota",
+  "avi\u00F3n",
+  "casa",
+  "caja",
+  "casa",
+  "manzana",
+  "manzana",
+  "pelota",
+  "abuela",
+  "mate",
+  "perro",
+  "pez",
+  "mate",
+  "avi\u00F3n",
+  "caja",
+  "caramelo",
+  "perro",
+  "pez"
+]
