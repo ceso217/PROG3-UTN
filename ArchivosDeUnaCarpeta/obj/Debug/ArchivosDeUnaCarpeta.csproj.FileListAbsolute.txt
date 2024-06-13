@@ -1,0 +1,10 @@
+C:\Users\baron\source\repos\UTN-PROG3\ArchivosDeUnaCarpeta\bin\Debug\ArchivosDeUnaCarpeta.exe.config
+C:\Users\baron\source\repos\UTN-PROG3\ArchivosDeUnaCarpeta\bin\Debug\ArchivosDeUnaCarpeta.exe
+C:\Users\baron\source\repos\UTN-PROG3\ArchivosDeUnaCarpeta\bin\Debug\ArchivosDeUnaCarpeta.pdb
+C:\Users\baron\source\repos\UTN-PROG3\ArchivosDeUnaCarpeta\obj\Debug\ArchivosDeUnaCarpeta.csproj.AssemblyReference.cache
+C:\Users\baron\source\repos\UTN-PROG3\ArchivosDeUnaCarpeta\obj\Debug\ArchivosDeUnaCarpeta.Form1.resources
+C:\Users\baron\source\repos\UTN-PROG3\ArchivosDeUnaCarpeta\obj\Debug\ArchivosDeUnaCarpeta.Properties.Resources.resources
+C:\Users\baron\source\repos\UTN-PROG3\ArchivosDeUnaCarpeta\obj\Debug\ArchivosDeUnaCarpeta.csproj.GenerateResource.cache
+C:\Users\baron\source\repos\UTN-PROG3\ArchivosDeUnaCarpeta\obj\Debug\ArchivosDeUnaCarpeta.csproj.CoreCompileInputs.cache
+C:\Users\baron\source\repos\UTN-PROG3\ArchivosDeUnaCarpeta\obj\Debug\ArchivosDeUnaCarpeta.exe
+C:\Users\baron\source\repos\UTN-PROG3\ArchivosDeUnaCarpeta\obj\Debug\ArchivosDeUnaCarpeta.pdb

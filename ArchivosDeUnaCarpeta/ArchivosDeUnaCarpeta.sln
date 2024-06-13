@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34511.84
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArchivosDeUnaCarpeta", "ArchivosDeUnaCarpeta.csproj", "{ABAC24C6-03EF-41D0-86BC-3497DB9B0F0F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ABAC24C6-03EF-41D0-86BC-3497DB9B0F0F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABAC24C6-03EF-41D0-86BC-3497DB9B0F0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABAC24C6-03EF-41D0-86BC-3497DB9B0F0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ABAC24C6-03EF-41D0-86BC-3497DB9B0F0F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {21B659CF-96EB-4834-85CB-D8B2C5EF0547}
+	EndGlobalSection
+EndGlobal

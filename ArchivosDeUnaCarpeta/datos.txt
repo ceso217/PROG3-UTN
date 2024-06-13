@@ -1,0 +1,23 @@
+Archivos del directorio pnps Tamaño de directorio: 9.193661E+08 bytes Ubicación: D:\Ceso\pnps
+Nombre: Catan EXP 5-6 [ES].pdf Tamaño: 18347386 bytes Tamaño relativo al directorio: 1.995656%  
+Nombre: Dixit-20240118T055227Z-001.zip Tamaño: 20003236 bytes Tamaño relativo al directorio: 2.175764%  
+Nombre: Isla Prohibida-20240118T055246Z-001.zip Tamaño: 365158689 bytes Tamaño relativo al directorio: 39.71853%  
+Nombre: Munchkin Munchkinomicón - A4  (By Jotha y Ale Ramírez).pdf Tamaño: 9055686 bytes Tamaño relativo al directorio: 0.9849924%  
+Nombre: Munchkin Polvo de Hadas - A4  (By Jotha y Ale Ramírez).pdf Tamaño: 8166063 bytes Tamaño relativo al directorio: 0.8882276%  
+Nombre: munchkin-133-1692675561-androeed.store-0.apk Tamaño: 323948747 bytes Tamaño relativo al directorio: 35.2361%  
+Nombre: Pelusas.pdf Tamaño: 112295463 bytes Tamaño relativo al directorio: 12.21445%  
+Nombre: Skull King - PnP.pdf Tamaño: 5158555 bytes Tamaño relativo al directorio: 0.5610991%  
+Nombre: tablero munchkin.jpg Tamaño: 57232262 bytes Tamaño relativo al directorio: 6.225188%  
+
+Subcarpetas del directorio pnps
+Nombre: Claim 1
+Nombre: Claim 2 [ES]
+Nombre: Cubirds
+Nombre: Munchkin 2 (Hacha Descomunal)
+Nombre: munchkin base a color
+Nombre: Munchkin Clasico A4 [ES]  (By Jotha y Ale Ramírez)
+Nombre: Munchkin Pathfinder [ES]    (By Jotha y Ale Ramírez)
+Nombre: Stardew Valley [EN][TTS]
+Nombre: Sushi Go Party [ES]
+Nombre: The Mind [ES]
+
