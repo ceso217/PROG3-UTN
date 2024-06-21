@@ -81,6 +81,7 @@
             this.panel1.Controls.Add(this.button18);
             this.panel1.Controls.Add(this.button19);
             this.panel1.Controls.Add(this.button20);
+            this.panel1.Enabled = false;
             this.panel1.Location = new System.Drawing.Point(12, 55);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(484, 382);
@@ -280,6 +281,7 @@
             // 
             this.button20.AutoSize = true;
             this.button20.BackColor = System.Drawing.Color.Coral;
+            this.button20.ForeColor = System.Drawing.SystemColors.ControlText;
             this.button20.Location = new System.Drawing.Point(387, 291);
             this.button20.Name = "button20";
             this.button20.Size = new System.Drawing.Size(90, 90);

@@ -29,7 +29,7 @@ namespace JuegoDeMemoriaPalabras
         int boton1;
         int boton2;
         int controlesPresionados = 0;
-        int movimietos = 20;
+        int movimietos = 15;
         Random rnd = new Random();
         public void mezclarLista()
         {
@@ -56,15 +56,34 @@ namespace JuegoDeMemoriaPalabras
             if (controlesPresionados == 0)
             {
                 boton1 = panel1.Controls.IndexOf(boton);
+                //panel1.Controls[boton1].Enabled = false;
                 boton.Text = paresRnd[boton1];
             }
             else
             {
                 boton2 = panel1.Controls.IndexOf(boton);
+                //panel1.Controls[boton2].Enabled = false;
                 boton.Text = paresRnd[boton2];
             }
+            boton.Click -= button_Click;
             boton.BackColor = Color.PeachPuff;
             controlesPresionados++;
+        }
+
+        public void desactivarBotones()
+        {
+            foreach (Button buton in panel1.Controls)
+            {
+                buton.Enabled = false;
+            }
+        }
+
+        public void activarBotones()
+        {
+            foreach (Button buton in panel1.Controls)
+            {
+                buton.Enabled = true;
+            }
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -80,6 +99,7 @@ namespace JuegoDeMemoriaPalabras
                 mezclarLista();
                 if (paresRnd.Count == 20)
                 {
+                    panel1.Enabled = true;
                     estadoActual = Estados.jugando;
                 }
             }
@@ -97,14 +117,16 @@ namespace JuegoDeMemoriaPalabras
                 label3.Text = estadoActual.ToString();
                 if (paresRnd[boton1] == paresRnd[boton2])
                 {
-                    textBox1.Text += paresRnd[boton1].ToString()+"\r\n";
                     panel1.Controls[boton1].Enabled = false;
                     panel1.Controls[boton2].Enabled = false;
+                    textBox1.Text += paresRnd[boton1].ToString() + "\r\n";
                     movimietos--;
                     estadoActual = Estados.jugando;
                 }
                 else
                 {
+                    panel1.Controls[boton1].Click += button_Click;
+                    panel1.Controls[boton2].Click += button_Click;
                     foreach (Button boton in panel1.Controls)
                     {
                         if (boton.Enabled)
@@ -128,7 +150,12 @@ namespace JuegoDeMemoriaPalabras
 
                 foreach (Button boton in panel1.Controls)
                 {
-                    boton.Enabled = false;
+                    if (boton.Enabled)
+                    {
+                        boton.Text = paresRnd[panel1.Controls.IndexOf(boton)];
+                        boton.BackColor = Color.LightCoral;
+                        boton.Enabled = false;
+                    }
                 }
             }
         }
