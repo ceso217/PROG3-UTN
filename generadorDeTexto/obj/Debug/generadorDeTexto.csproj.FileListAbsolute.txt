@@ -1,0 +1,10 @@
+C:\Users\baron\source\repos\UTN-PROG3\generadorDeTexto\obj\Debug\generadorDeTexto.csproj.AssemblyReference.cache
+C:\Users\baron\source\repos\UTN-PROG3\generadorDeTexto\obj\Debug\generadorDeTexto.Form1.resources
+C:\Users\baron\source\repos\UTN-PROG3\generadorDeTexto\obj\Debug\generadorDeTexto.Properties.Resources.resources
+C:\Users\baron\source\repos\UTN-PROG3\generadorDeTexto\obj\Debug\generadorDeTexto.csproj.GenerateResource.cache
+C:\Users\baron\source\repos\UTN-PROG3\generadorDeTexto\obj\Debug\generadorDeTexto.csproj.CoreCompileInputs.cache
+C:\Users\baron\source\repos\UTN-PROG3\generadorDeTexto\bin\Debug\generadorDeTexto.exe.config
+C:\Users\baron\source\repos\UTN-PROG3\generadorDeTexto\bin\Debug\generadorDeTexto.exe
+C:\Users\baron\source\repos\UTN-PROG3\generadorDeTexto\bin\Debug\generadorDeTexto.pdb
+C:\Users\baron\source\repos\UTN-PROG3\generadorDeTexto\obj\Debug\generadorDeTexto.exe
+C:\Users\baron\source\repos\UTN-PROG3\generadorDeTexto\obj\Debug\generadorDeTexto.pdb
