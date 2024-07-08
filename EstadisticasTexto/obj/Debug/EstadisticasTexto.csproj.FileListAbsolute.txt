@@ -8,3 +8,13 @@ C:\Users\baron\Desktop\copias\UTN-PROG3\EstadisticasTexto\obj\Debug\Estadisticas
 C:\Users\baron\Desktop\copias\UTN-PROG3\EstadisticasTexto\obj\Debug\EstadisticasTexto.csproj.CoreCompileInputs.cache
 C:\Users\baron\Desktop\copias\UTN-PROG3\EstadisticasTexto\obj\Debug\EstadisticasTexto.exe
 C:\Users\baron\Desktop\copias\UTN-PROG3\EstadisticasTexto\obj\Debug\EstadisticasTexto.pdb
+C:\Users\baron\source\repos\UTN-PROG3\EstadisticasTexto\bin\Debug\EstadisticasTexto.exe.config
+C:\Users\baron\source\repos\UTN-PROG3\EstadisticasTexto\bin\Debug\EstadisticasTexto.exe
+C:\Users\baron\source\repos\UTN-PROG3\EstadisticasTexto\obj\Debug\EstadisticasTexto.csproj.AssemblyReference.cache
+C:\Users\baron\source\repos\UTN-PROG3\EstadisticasTexto\obj\Debug\EstadisticasTexto.Form1.resources
+C:\Users\baron\source\repos\UTN-PROG3\EstadisticasTexto\obj\Debug\EstadisticasTexto.Properties.Resources.resources
+C:\Users\baron\source\repos\UTN-PROG3\EstadisticasTexto\obj\Debug\EstadisticasTexto.csproj.GenerateResource.cache
+C:\Users\baron\source\repos\UTN-PROG3\EstadisticasTexto\obj\Debug\EstadisticasTexto.csproj.CoreCompileInputs.cache
+C:\Users\baron\source\repos\UTN-PROG3\EstadisticasTexto\obj\Debug\EstadisticasTexto.exe
+C:\Users\baron\source\repos\UTN-PROG3\EstadisticasTexto\obj\Debug\EstadisticasTexto.pdb
+C:\Users\baron\source\repos\UTN-PROG3\EstadisticasTexto\bin\Debug\EstadisticasTexto.pdb
