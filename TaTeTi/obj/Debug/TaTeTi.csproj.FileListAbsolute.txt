@@ -1,0 +1,10 @@
+C:\Users\baron\source\repos\UTN-PROG3\TaTeTi\bin\Debug\TaTeTi.exe.config
+C:\Users\baron\source\repos\UTN-PROG3\TaTeTi\bin\Debug\TaTeTi.exe
+C:\Users\baron\source\repos\UTN-PROG3\TaTeTi\bin\Debug\TaTeTi.pdb
+C:\Users\baron\source\repos\UTN-PROG3\TaTeTi\obj\Debug\TaTeTi.csproj.AssemblyReference.cache
+C:\Users\baron\source\repos\UTN-PROG3\TaTeTi\obj\Debug\TaTeTi.Form1.resources
+C:\Users\baron\source\repos\UTN-PROG3\TaTeTi\obj\Debug\TaTeTi.Properties.Resources.resources
+C:\Users\baron\source\repos\UTN-PROG3\TaTeTi\obj\Debug\TaTeTi.csproj.GenerateResource.cache
+C:\Users\baron\source\repos\UTN-PROG3\TaTeTi\obj\Debug\TaTeTi.csproj.CoreCompileInputs.cache
+C:\Users\baron\source\repos\UTN-PROG3\TaTeTi\obj\Debug\TaTeTi.exe
+C:\Users\baron\source\repos\UTN-PROG3\TaTeTi\obj\Debug\TaTeTi.pdb
