@@ -1,0 +1,130 @@
+[
+  {
+    "Palabraa": "\u308F\u305F\u3057\u305F\u3061",
+    "Significado": "nosotros"
+  },
+  {
+    "Palabraa": "\u3042\u306A\u305F",
+    "Significado": "usted"
+  },
+  {
+    "Palabraa": "\u3053\u3069\u3082",
+    "Significado": "ni\u00F1o/a"
+  },
+  {
+    "Palabraa": "\u308F\u304B\u3082\u306E",
+    "Significado": "joven"
+  },
+  {
+    "Palabraa": "\u304A\u3068\u306A",
+    "Significado": "adulto"
+  },
+  {
+    "Palabraa": "\u304A\u3068\u3057\u3088\u308A",
+    "Significado": "anciano"
+  },
+  {
+    "Palabraa": "\u304A\u3068\u3053\u306E\u3053",
+    "Significado": "ni\u00F1o"
+  },
+  {
+    "Palabraa": "\u304A\u3093\u306A\u306E\u3053",
+    "Significado": "ni\u00F1a"
+  },
+  {
+    "Palabraa": "\u304A\u3068\u3053",
+    "Significado": "hombre"
+  },
+  {
+    "Palabraa": "\u3073\u3087\u3046\u3044\u3093",
+    "Significado": "hospital"
+  },
+  {
+    "Palabraa": "\u308A\u3087\u3046\u3057\u3093",
+    "Significado": "padres"
+  },
+  {
+    "Palabraa": "\u304D\u3087\u3046\u3060\u3044",
+    "Significado": "hermanos"
+  },
+  {
+    "Palabraa": "\u3061\u3061",
+    "Significado": "mi padre"
+  },
+  {
+    "Palabraa": "\u304A\u3068\u3046\u3055\u3093",
+    "Significado": "padre de otro"
+  },
+  {
+    "Palabraa": "\u306F\u306F",
+    "Significado": "mi madre"
+  },
+  {
+    "Palabraa": "\u304A\u304B\u3042\u3055\u3093",
+    "Significado": "madre de otro"
+  },
+  {
+    "Palabraa": "\u3042\u306D",
+    "Significado": "mi hermana mayor"
+  },
+  {
+    "Palabraa": "\u304A\u306D\u3048\u3055\u3093",
+    "Significado": "hermana mayor de otro"
+  },
+  {
+    "Palabraa": "\u304A\u306B\u3044\u3055\u3093",
+    "Significado": "hermano mayor de otro"
+  },
+  {
+    "Palabraa": "\u304A\u3068\u3046\u3068",
+    "Significado": "mi hermano menor"
+  },
+  {
+    "Palabraa": "\u304A\u3068\u3046\u3068\u3055\u3093",
+    "Significado": "hermano menor de otro"
+  },
+  {
+    "Palabraa": "\u3044\u3082\u3046\u3068",
+    "Significado": "mi hermana menor"
+  },
+  {
+    "Palabraa": "\u3044\u3082\u3046\u3068\u3055\u3093",
+    "Significado": "hermana menor de otro"
+  },
+  {
+    "Palabraa": "\u305D\u3075",
+    "Significado": "mi abuelo"
+  },
+  {
+    "Palabraa": "\u304A\u3058\u3044\u3055\u3093",
+    "Significado": "abuelo de otro"
+  },
+  {
+    "Palabraa": "\u305D\u307C",
+    "Significado": "mi abuela"
+  },
+  {
+    "Palabraa": "\u304A\u3070\u3042\u3055\u3093",
+    "Significado": "abuela de otro"
+  },
+  {
+    "Palabraa": "\u304A\u3063\u3068",
+    "Significado": "mi marido"
+  },
+  {
+    "Palabraa": "\u3054\u3057\u3085\u3058\u3093",
+    "Significado": "marido de otro"
+  },
+  {
+    "Palabraa": "\u3064\u307E",
+    "Significado": "mi mujer"
+  },
+  {
+    "Palabraa": "\u304A\u304F\u3055\u3093",
+    "Significado": "mujer de otro"
+  },
+  {
+    "Palabraa": "\u304A\u3053\u3055\u3093",
+    "Significado": "hijo/a de otro"
+  }
+]
